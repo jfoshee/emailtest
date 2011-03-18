@@ -1,4 +1,12 @@
 Emailtest::Application.routes.draw do
+  
+  get "signup/form"
+  get "signup/submit"
+  get "signup/error"
+  get "signup/confirmation"
+
+  root :to => "signup#form"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
