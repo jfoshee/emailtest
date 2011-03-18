@@ -1,2 +1,15 @@
 <h1>Signup#form</h1>
 <p>Find me in app/views/signup/form.html.erb</p>
+
+<%= form_tag('signup/submit') do -%>
+  <div class="field">
+    <%= label_tag :name %><br />
+    <%= text_field_tag :name %>
+  </div>
+
+  <div class="actions">
+    <%= submit_tag %>
+  </div>
+<%end -%>
+
+

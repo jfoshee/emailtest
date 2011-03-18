@@ -1,7 +1,7 @@
 Emailtest::Application.routes.draw do
   
   get "signup/form"
-  get "signup/submit"
+  post "signup/submit"
   get "signup/error"
   get "signup/confirmation"
 

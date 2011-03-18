@@ -3,6 +3,7 @@ class SignupController < ApplicationController
   end
 
   def submit
+    @name = params[:name]
   end
 
   def error
