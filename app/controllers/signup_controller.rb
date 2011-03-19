@@ -4,6 +4,8 @@ class SignupController < ApplicationController
 
   def submit
     @name = params[:name]
+    mail = Notifications.new_note
+    mail.deliver
   end
 
   def error
